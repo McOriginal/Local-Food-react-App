@@ -20,6 +20,7 @@ export default function Checkout(){
 
 function handleClose(){
     userProgressCtx.hideCheckout();
+    alert("Félicitation Votre commande  a été bien validé");
 }
 
 
@@ -65,7 +66,7 @@ function handleSubmit(event){
                 Close
             </Button>
 
-            <Button> Submit Order</Button>
+            <Button onClick={handleClose}> Submit Order</Button>
         </p>
         </form>
     </Modal>
